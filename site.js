@@ -20,6 +20,7 @@ const togglePlayPauseButton = document.getElementById("togglePlayPause");
 const mysticTribeAiUrl = "https://media.hardwax.com/audio/38804_B1.mp3";
 
 const audio = new Audio(mysticTribeAiUrl);
+audio.crossOrigin = "anonymous"; // Enable CORS
 audio.loop = true; // Enable looping
 
 togglePlayPauseButton.addEventListener("click", function() {
